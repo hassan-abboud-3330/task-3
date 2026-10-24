@@ -1,4 +1,4 @@
-import SectionInfo from "../SectionInfo";
+import SectionInfo from "../../../SectionInfo";
 import NavItem from "./NavItem";
 import { cardsData } from "./cardsData";
 import styles from "./NavigationCards.module.css"

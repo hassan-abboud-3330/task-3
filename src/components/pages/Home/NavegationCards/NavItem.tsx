@@ -1,6 +1,6 @@
 import styles from "./NavItem.module.css"
-import { border, arrowRight } from "../../assets/icons/icons";
-import Card from "../../ui/Card";
+import { border, arrowRight } from "../../../../assets/icons/icons";
+import Card from "../../../../ui/Card";
 // import {dashed} from "../../assets/icons/bo"
 interface NavItemProps {
   title: string

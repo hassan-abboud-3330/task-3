@@ -1,4 +1,4 @@
-import { user1, user2, user3 } from "../../assets/icons/icons"
+import { user1, user2, user3 } from "../../../../assets/icons/icons"
 
 interface Testimonial {
   img: string

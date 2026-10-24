@@ -1,4 +1,4 @@
-import Card from "../ui/Card"
+import Card from "../../../../ui/Card"
 import styles from "./BenefitsItem.module.css"
 interface BenefitsItemProps {
   icon: string

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import SectionInfo from '../SectionInfo';
+import SectionInfo from '../../../SectionInfo';
 import TestimonialItem from './TestimonialItem';
 import { testimonials } from './testimonials';
-import { arrowLeft, arrowRight } from '../../assets/icons/icons';
+import { arrowLeft, arrowRight } from '../../../../assets/icons/icons';
 import styles from './Testimonials.module.css'
 
 
@@ -20,7 +20,7 @@ const Testimonials = () => {
         })
     }
     //selecte three cards started by current card, on desktop view.
-    let desktopCards = [];
+    const desktopCards = [];
     for (let i = current; i < current + 3; i++) {
         desktopCards.push(testimonials[i % testimonialsLength]);
     }
