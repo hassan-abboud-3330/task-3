@@ -31,16 +31,18 @@
 .links {
   display: none;
   align-self: stretch;
-  align-items: center;
 }
 
 .links .link {
   display: flex;
-  align-self: stretch;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 1.25rem;
   border-left: var(--border);
+}
+
+.links .link a {
+  padding-inline: 1.25rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
@@ -85,7 +87,6 @@
 .mobile-links>.link {
   font-weight: 600;
   background: var(--burger);
-  padding-block: 1.25rem;
   border-bottom: var(--border);
 
   display: grid;
@@ -98,6 +99,12 @@
   &:active {
     background-color: var(--logo);
   }
+}
+
+.mobile-links>.link a {
+  width: 100%;
+  padding-block: 1.25rem;
+  text-align: center;
 }
 
 .container a {

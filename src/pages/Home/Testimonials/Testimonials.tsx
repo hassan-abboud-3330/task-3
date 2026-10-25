@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import SectionInfo from '../../../SectionInfo';
+import SectionInfo from '../../../components/SectionInfo';
 import TestimonialItem from './TestimonialItem';
 import { testimonials } from './testimonials';
-import { arrowLeft, arrowRight } from '../../../../assets/icons/icons';
+import { arrowLeft, arrowRight } from '../../../assets/icons/icons';
 import styles from './Testimonials.module.css'
 
 

@@ -1,5 +1,5 @@
-import { star } from "../../../../assets/icons/icons"
-import Card from "../../../../ui/Card"
+import { star } from "../../../assets/icons/icons"
+import Card from "../../../ui/Card"
 import styles from "./TestimonialItem.module.css"
 interface TestimonialItemProps {
   img: string

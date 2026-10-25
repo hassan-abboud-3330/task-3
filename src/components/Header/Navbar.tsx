@@ -1,9 +1,34 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import burger from "/src/assets/imgs/burger.png"
 import logo from "/src/assets/imgs/logo.png"
 import styles from "./Navbar.module.css"
-
-const links = ["Home", "About Us", "Academics", "Admissions", "Student Life", "Contact"];
+const links = [
+  {
+    title: "Home",
+    path: "/"
+  },
+  {
+    title: "About Us",
+    path: "/about"
+  },
+  {
+    title: "Academics",
+    path: "/"
+  },
+  {
+    title: "Admissions",
+    path: "/"
+  },
+  {
+    title: "Student Life",
+    path: "/"
+  },
+  {
+    title: "Contact",
+    path: "/"
+  }
+]
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
@@ -15,9 +40,9 @@ const Navbar = () => {
         <ul className={styles.links}>
           {links.map((item, i) =>
             <li
-              className={`${styles.link} ${item.toLowerCase() === 'home' && styles.home}`}
+              className={`${styles.link} ${item.title.toLowerCase() === 'home' && styles.home}`}
               key={i}>
-              <a href="#">{item}</a>
+              <NavLink to={item.path}>{item.title}</NavLink>
             </li>)}
         </ul>
         <div className={styles.burger} onClick={() => setIsOpen(prev => !prev)}>
@@ -31,7 +56,7 @@ const Navbar = () => {
             className={styles.link}
             onClick={() => { setIsOpen(prev => !prev) }}
             key={i}>
-            <a href="#">{item}</a>
+            <NavLink to={item.path}>{item.title}</NavLink>
           </li>)}
       </ul>}
     </div>

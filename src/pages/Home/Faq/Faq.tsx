@@ -1,4 +1,4 @@
-import SectionInfo from "../../../SectionInfo"
+import SectionInfo from "../../../components/SectionInfo"
 import FaqItem from "./FaqItem"
 import { faqsData } from "./Faqs"
 import styles from "./Faq.module.css"

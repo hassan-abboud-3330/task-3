@@ -2,9 +2,9 @@ import styles from "./About.module.css"
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <main className={styles.about}>
       hello from About
-    </div>
+    </main>
   )
 }
 

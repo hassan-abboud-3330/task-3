@@ -1,5 +1,5 @@
 import heroImg from "/src/assets/imgs/hero.png"
-import Card from "../../../ui/Card"
+import Card from "../../ui/Card"
 import styles from "./Hero.module.css"
 const Hero = () => {
   return (

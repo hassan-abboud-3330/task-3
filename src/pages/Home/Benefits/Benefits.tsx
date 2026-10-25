@@ -1,6 +1,6 @@
-import SectionInfo from "../../../SectionInfo"
+import SectionInfo from "../../../components/SectionInfo";
 import BenefitsItem from "./BenefitsItem";
-import { univ, crown, mask, flag, tier, users } from "../../../../assets/icons/icons";
+import { univ, crown, mask, flag, tier, users } from "../../../assets/icons/icons"
 import styles from "./Benefits.module.css"
 const benefitsData = [
   { icon: univ, title: 'Holistic Learning Approach', content: 'Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.' },
