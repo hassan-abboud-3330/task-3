@@ -1,0 +1,17 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width:1024px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .cards>* {
+    width: calc(50% - 3rem);
+  }
+}

@@ -48,7 +48,8 @@ const Testimonials = () => {
                     </div>
                 </div>
                 <button aria-label='Next testimonial' className={`${styles["right-btn"]} ${styles['desktop-btns']}`}
-                    onClick={goToNext}><img src={arrowRight} alt="" /></button>
+                    onClick={goToNext}><img src={arrowRight} alt="" />
+                </button>
                 <div className={styles['mobile-view']}>
                     <TestimonialItem
                         img={testimonials[current].img}

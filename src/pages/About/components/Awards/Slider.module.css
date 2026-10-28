@@ -1,0 +1,58 @@
+.desktopView {
+  display: none;
+}
+
+.controls {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls__caption {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.controls__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.prev,
+.next {
+  background: #fff;
+  border: var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: .5rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+
+/* ====
+  responsive
+===== */
+
+@media (min-width:1024px) {
+  .mobileView {
+    display: none;
+  }
+
+  .desktopView {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .desktopView>* {
+    width: 33%;
+
+  }
+}

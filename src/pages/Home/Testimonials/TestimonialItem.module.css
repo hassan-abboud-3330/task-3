@@ -12,6 +12,7 @@
   gap: 10px;
   text-align: center;
   align-self: stretch;
+  min-height: 18rem;
 }
 
 .imgWrapper {

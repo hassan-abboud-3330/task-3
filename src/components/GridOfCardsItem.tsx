@@ -1,11 +1,11 @@
-import Card from "../../../ui/Card"
-import styles from "./BenefitsItem.module.css"
-interface BenefitsItemProps {
+import Card from "../ui/Card"
+import styles from "./GridOfCardsItem.module.css"
+interface GridOfCardsItemProps {
   icon: string
   title: string
   content: string
 }
-const BenefitsItem = ({ icon, title, content }: BenefitsItemProps) => {
+const GridOfCardsItem = ({ icon, title, content }: GridOfCardsItemProps) => {
   return (
     <li>
       <Card className={styles.card}>
@@ -18,4 +18,5 @@ const BenefitsItem = ({ icon, title, content }: BenefitsItemProps) => {
     </li>
   )
 }
-export default BenefitsItem;
+export default GridOfCardsItem;
+

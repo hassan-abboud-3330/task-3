@@ -1,0 +1,129 @@
+.card {
+  background: #fff;
+  padding: 2rem 4rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+
+  &:not(:last-child):before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to right,
+        #ffae80 0%,
+        #ffae80 35%,
+        #000 49%,
+        #000 51%,
+        #ffae80 65%);
+    ;
+    position: absolute;
+    top: 2.5rem;
+    left: -3rem;
+    z-index: 1;
+  }
+
+  &:not(:first-child):after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to right,
+        #ffae80 0%,
+        #ffae80 35%,
+        #000 49%,
+        #000 51%,
+        #ffae80 65%);
+    ;
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    transform: translateY(calc(-100% + 2.5rem));
+    z-index: 1;
+  }
+}
+
+.line {
+  width: 42px;
+  height: 12px;
+  background: linear-gradient(to top,
+      #ffae80 0%,
+      #ffae80 35%,
+      #000 49%,
+      #000 51%,
+      #ffae80 65%);
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  transform: translate(-100%, -50%);
+  z-index: 3;
+}
+
+.line div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: var(--border);
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    z-index: 3;
+  }
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: var(--border);
+    position: absolute;
+    top: -5px;
+    z-index: 3;
+    right: -10px;
+  }
+}
+
+.year {
+  border: var(--border);
+  width: fit-content;
+  height: 5rem;
+  padding: 0 2rem;
+  font-size: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.year img {
+  display: block;
+  width: 3rem;
+  height: auto;
+}
+
+.box h3 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width:900px) {
+  .box {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}

@@ -1,12 +1,13 @@
 import styles from "./SectionInfo.module.css"
-interface SectionProps {
+export interface SectionProps {
   intro: string
   title: string
   content: string
+  className?: string
 }
-const SectionInfo = ({ intro, title, content }: SectionProps) => {
+const SectionInfo = ({ intro, title, content, className }: SectionProps) => {
   return (
-    <article className={styles.container}>
+    <article className={`${className} ${styles.container}`}>
       <p className={styles.intro}>{intro}</p>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.content}>{content}</p>

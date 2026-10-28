@@ -1,0 +1,9 @@
+.button {
+  background: var(--burger);
+  padding: .8rem;
+  border: var(--border);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

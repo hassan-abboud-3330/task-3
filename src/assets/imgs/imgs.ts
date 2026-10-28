@@ -1,0 +1,6 @@
+export { default as teacher1 } from "../imgs/people/teach1.png"
+export { default as teacher2 } from "../imgs/people/teach2.png"
+export { default as teacher3 } from "../imgs/people/teach3.png"
+export { default as teacher4 } from "../imgs/people/teach4.png"
+export { default as teacher5 } from "../imgs/people/teach5.png"
+export { default as teacher6 } from "../imgs/people/teach6.png"

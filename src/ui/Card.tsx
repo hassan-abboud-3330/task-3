@@ -3,12 +3,12 @@ import styles from "./Card.module.css"
 interface cardProps {
   children: ReactNode
   className?: string
-  shadowClr?: string
+  style?: React.CSSProperties;
 }
-const Card = ({ children, className, shadowClr }: cardProps) => {
+const Card = ({ children, className, style }: cardProps) => {
   return (
     <article className={`${styles.card} ${className}`}
-      style={{ "--shadow-clr": shadowClr } as React.CSSProperties}
+      style={style}
     >
       {children}
     </article>
