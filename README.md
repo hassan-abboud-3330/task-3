@@ -9,6 +9,8 @@ A responsive website for a children's learning academy, built with React, TypeSc
 - Benefits and testimonials sections.
 - Frequently Asked Questions (FAQ).
 - Navigation cards and footer.
+- Add Home,About and Academics pages to the site.
+- Use react-router-dom to navigate between pages.
 
 ## Technologies
 
