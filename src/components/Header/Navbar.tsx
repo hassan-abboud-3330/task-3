@@ -14,7 +14,7 @@ const links = [
   },
   {
     title: "Academics",
-    path: "/"
+    path: "/academics"
   },
   {
     title: "Admissions",

@@ -3,5 +3,4 @@
   border: var(--border);
   border-radius: 12px;
   box-shadow: 4px 4px var(--shadow-clr);
-  /* overflow: hidden; */
 }

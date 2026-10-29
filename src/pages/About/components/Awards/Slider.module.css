@@ -19,6 +19,10 @@
   gap: 1rem;
 }
 
+.desktopCounter {
+  display: none;
+}
+
 .prev,
 .next {
   background: #fff;
@@ -53,6 +57,14 @@
 
   .desktopView>* {
     width: 33%;
+    min-height: 355px;
+  }
 
+  .mobileCounter {
+    display: none;
+  }
+
+  .desktopCounter {
+    display: block;
   }
 }

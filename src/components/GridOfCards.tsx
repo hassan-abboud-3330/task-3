@@ -7,8 +7,8 @@ export interface CardData {
   title: string
   content: string
 }
-export type cardsData = CardData[]
-const GridOfCards = ({ data }: { data: cardsData }
+export type GridOfCardsData = CardData[]
+const GridOfCards = ({ data }: { data: GridOfCardsData }
 ) => {
   return (
     <ul className={styles.grid}>

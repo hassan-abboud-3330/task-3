@@ -44,14 +44,15 @@ const Slider = () => {
           card => <GridOfCardsItem
             icon={card.icon}
             title={card.title}
-            content={card.title}
+            content={card.content}
             key={card.id}
           />)}
       </ul>
 
       {/* // Controls */}
       <div className={styles.controls}>
-        <div className={styles.controls__caption}>{(awardsData.length - 1) - current} More Awards</div>
+        <div className={styles.mobileCounter}>{(awardsData.length - 1) - current} More Awards</div>
+        <div className={styles.desktopCounter}>{Math.max(0, awardsData.length - current - 3)} More Awards</div>
         <div className={styles.controls__actions}>
           <button className={styles.prev} onClick={handleGoPrev}>
             <img src={arrowLeft} alt="" />

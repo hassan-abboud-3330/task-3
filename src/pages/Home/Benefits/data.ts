@@ -1,6 +1,6 @@
-import type { cardsData } from "../../../components/GridOfCards";
+import type { GridOfCardsData } from "../../../components/GridOfCards";
 import { univ, crown, mask, flag, tier, users } from "../../../assets/icons/icons"
-export const benefitsData: cardsData = [
+export const benefitsData: GridOfCardsData = [
   { icon: univ, title: 'Holistic Learning Approach', content: 'Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.', id: 1 },
   { icon: crown, title: 'Experienced Educators', content: 'Our passionate and qualified teachers create a supportive and stimulating learning environment.', id: 2 },
   { icon: mask, title: 'Nurturing Environment', content: 'We prioritize safety and provide a warm and caring atmosphere for every child.', id: 3 },

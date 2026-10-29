@@ -44,6 +44,7 @@
     left: -3rem;
     transform: translateY(calc(-100% + 2.5rem));
     z-index: 1;
+
   }
 }
 
@@ -101,14 +102,16 @@
   width: fit-content;
   height: 5rem;
   padding: 0 2rem;
-  font-size: 24px;
+  padding: 20px 24px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
+
+  font-size: 38px;
+  font-family: Raleway;
+  font-weight: 700;
 }
 
 .year img {
@@ -121,9 +124,31 @@
   margin-bottom: 1rem;
 }
 
-@media (min-width:900px) {
+@media (min-width:1280px) {
+  .card {
+    padding-left: calc(4rem + 42px);
+  }
+
   .box {
     flex-direction: row;
     gap: 3rem;
+  }
+
+  .year {
+    align-self: stretch;
+    width: 250px;
+    height: 100%;
+  }
+
+  .line {
+    top: 50%;
+  }
+
+  .box:not(:last-child):before {
+    top: 50%;
+  }
+
+  .box:not(:first-child):after {
+    top: 20px
   }
 }

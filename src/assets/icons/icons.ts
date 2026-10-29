@@ -26,3 +26,10 @@ export { default as lightning } from "../icons/lightning.png"
 export { default as chart } from "../icons/pie-chart.png"
 export { default as bars } from "../icons/bars.png"
 export { default as cubs9 } from "../imgs/cubs-9.png"
+export { default as book } from "../icons/book.png"
+export { default as puzzle } from "../icons/puzzle.png"
+export { default as bruch } from "../icons/brush.png"
+export { default as blackStar } from "../icons/black-star.png"
+export { default as sun } from "../icons/sun.png"
+
+
